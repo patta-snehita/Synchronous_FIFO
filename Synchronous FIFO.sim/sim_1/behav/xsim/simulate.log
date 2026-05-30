@@ -1,0 +1,18 @@
+Time resolution is 1 ps
+Time=0|wr_en=0|rd_en=0|data_in=00|data_out=00|full=0|empty=1|wr_ptr=0|rd_ptr=0|count=0
+Time=20000|wr_en=1|rd_en=0|data_in=aa|data_out=00|full=0|empty=1|wr_ptr=0|rd_ptr=0|count=0
+Time=25000|wr_en=1|rd_en=0|data_in=aa|data_out=00|full=0|empty=0|wr_ptr=1|rd_ptr=0|count=1
+Time=30000|wr_en=1|rd_en=0|data_in=bb|data_out=00|full=0|empty=0|wr_ptr=1|rd_ptr=0|count=1
+Time=35000|wr_en=1|rd_en=0|data_in=bb|data_out=00|full=0|empty=0|wr_ptr=2|rd_ptr=0|count=2
+Time=40000|wr_en=1|rd_en=0|data_in=cc|data_out=00|full=0|empty=0|wr_ptr=2|rd_ptr=0|count=2
+Time=45000|wr_en=1|rd_en=0|data_in=cc|data_out=00|full=0|empty=0|wr_ptr=3|rd_ptr=0|count=3
+Time=50000|wr_en=1|rd_en=0|data_in=dd|data_out=00|full=0|empty=0|wr_ptr=3|rd_ptr=0|count=3
+Time=55000|wr_en=1|rd_en=0|data_in=dd|data_out=00|full=1|empty=0|wr_ptr=0|rd_ptr=0|count=4
+Time=60000|wr_en=0|rd_en=0|data_in=dd|data_out=00|full=1|empty=0|wr_ptr=0|rd_ptr=0|count=4
+Time=80000|wr_en=0|rd_en=1|data_in=dd|data_out=00|full=1|empty=0|wr_ptr=0|rd_ptr=0|count=4
+Time=85000|wr_en=0|rd_en=1|data_in=dd|data_out=aa|full=0|empty=0|wr_ptr=0|rd_ptr=1|count=3
+Time=95000|wr_en=0|rd_en=1|data_in=dd|data_out=bb|full=0|empty=0|wr_ptr=0|rd_ptr=2|count=2
+Time=105000|wr_en=0|rd_en=1|data_in=dd|data_out=cc|full=0|empty=0|wr_ptr=0|rd_ptr=3|count=1
+Time=115000|wr_en=0|rd_en=1|data_in=dd|data_out=dd|full=0|empty=1|wr_ptr=0|rd_ptr=0|count=0
+Time=120000|wr_en=0|rd_en=0|data_in=dd|data_out=dd|full=0|empty=1|wr_ptr=0|rd_ptr=0|count=0
+$finish called at time : 170 ns : File "C:/Users/snehi/OneDrive/Desktop/Synchronous FIFO/Synchronous FIFO.srcs/sim_1/new/FIFO_tb.v" Line 44
