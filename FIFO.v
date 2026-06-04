@@ -1,4 +1,6 @@
 `timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+
 
 module FIFO(
     input clk,
@@ -32,19 +34,25 @@ module FIFO(
        end
        else
        begin
-          if(wr_en && !full)
-          begin
-             fifo_mem[wr_ptr]<=data_in;
-             wr_ptr<=wr_ptr+1;
-             count<=count+1;
-          end
-         if(rd_en &&!empty)
-         begin
-           data_out<=fifo_mem[rd_ptr];
-           rd_ptr<=rd_ptr+1;
-           count<=count-1;
-        end
-      end
+        
+       if(wr_en && !full)
+       begin
+        fifo_mem[wr_ptr] <= data_in;
+        wr_ptr <= wr_ptr + 1;
+       end
+       
+       if(rd_en && !empty)
+       begin
+        data_out <= fifo_mem[rd_ptr];
+        rd_ptr <= rd_ptr + 1;
+       end
+    case({wr_en && !full, rd_en && !empty})
+        2'b10: count <= count + 1;
+        2'b01: count <= count - 1;
+        2'b11: count <= count;
+        default: count <= count;
+    endcase
+    end 
     end
       
       //status signals
